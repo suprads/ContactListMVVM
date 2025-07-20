@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContactList.Views.HomePage"
+             xmlns:vm="clr-namespace:ContactList.Models.ViewModels"
+             x:DataType="vm:ContactListViewModel"
+             Title="Home Page">
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Entry x:Name="studentId" Placeholder="Student Id" Text="{Binding Student.StudentId}"/>
+        <Entry x:Name="studentName" Placeholder="Student Name" Text="{Binding Student.StudentName}"/>
+        <Entry x:Name="studentEmail" Placeholder="Student Email" Text="{Binding Student.StudentEmail}"/>
+        <Entry x:Name="studentGPA" Placeholder="GPA" Text="{Binding Student.Gpa}"/>
+        <Button x:Name="addButton" Text="Add Student" Command="{Binding AddCommand}"/>
+        <Button Text="View List" Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
