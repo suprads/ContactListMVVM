@@ -10,7 +10,6 @@
         <Entry x:Name="contactEmail" Placeholder="Contact Email" Text="{Binding Contact.ContactEmail}"/>
         <Entry x:Name="contactNumber" Placeholder="Contact Number" Text="{Binding Contact.ContactNumber}"/>
         <Entry x:Name="contactDescription" Placeholder="Contact Description" Text="{Binding Contact.ContactDescription}"/>
-        <Button x:Name="addButton" Text="Add Contact" Command="{Binding AddCommand}"/>
-        <Button Text="View List" Clicked="Button_Clicked"/>
+        <Button x:Name="addButton" Text="Save Contact" Clicked="Button_Clicked" Command="{Binding AddCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

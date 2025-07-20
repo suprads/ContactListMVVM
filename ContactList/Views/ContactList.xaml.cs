@@ -8,7 +8,7 @@ public partial class ContactList : ContentPage
 	public ContactList()
 	{
         InitializeComponent();
-	}
+    }
 
     private void Lv_ItemTapped(object sender, ItemTappedEventArgs e)
     {
@@ -17,6 +17,10 @@ public partial class ContactList : ContentPage
         var contactDetail = new ContactDetail();
         contactDetail.BindingContext = contactViewModel;
         Navigation.PushAsync(contactDetail);
+    }
 
+    private void ContactButton_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PopToRootAsync();
     }
 }
