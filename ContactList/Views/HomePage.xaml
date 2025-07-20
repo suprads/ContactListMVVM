@@ -6,11 +6,11 @@
              x:DataType="vm:ContactListViewModel"
              Title="Home Page">
     <VerticalStackLayout Padding="10" Spacing="10">
-        <Entry x:Name="studentId" Placeholder="Student Id" Text="{Binding Student.StudentId}"/>
-        <Entry x:Name="studentName" Placeholder="Student Name" Text="{Binding Student.StudentName}"/>
-        <Entry x:Name="studentEmail" Placeholder="Student Email" Text="{Binding Student.StudentEmail}"/>
-        <Entry x:Name="studentGPA" Placeholder="GPA" Text="{Binding Student.Gpa}"/>
-        <Button x:Name="addButton" Text="Add Student" Command="{Binding AddCommand}"/>
+        <Entry x:Name="contactName" Placeholder="Contact Name" Text="{Binding Contact.ContactName}"/>
+        <Entry x:Name="contactEmail" Placeholder="Contact Email" Text="{Binding Contact.ContactEmail}"/>
+        <Entry x:Name="contactNumber" Placeholder="Contact Number" Text="{Binding Contact.ContactNumber}"/>
+        <Entry x:Name="contactDescription" Placeholder="Contact Description" Text="{Binding Contact.ContactDescription}"/>
+        <Button x:Name="addButton" Text="Add Contact" Command="{Binding AddCommand}"/>
         <Button Text="View List" Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
